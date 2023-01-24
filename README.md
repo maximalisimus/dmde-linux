@@ -15,7 +15,7 @@ In Terminal:
 ```
 Download Repo
 
-$ git clone https://github.com/maximalisimus/dmde-linux.git
+$ git clone https://github.com/maximalisimus/dmde-linux.git --branch cli
 $ cd dmde-linux
 
 ```
