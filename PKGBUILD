@@ -3,6 +3,9 @@
 
 pkgbase=dmde-linux
 pkgname=('dmde-linux' 'dmde-cli')
+pkg_gui_64="dmde-4-2-0-814-lin64-gui.zip"
+pkg_con_32="dmde-4-2-0-814-lin32-con.zip"
+pkg_con_64="dmde-4-2-0-814-lin64-con.zip"
 pkgver=4.2.0
 pkgrel=1
 pkgdesc="DMDE is a powerful tool for data searching, editing, and recovery on disks"
@@ -13,10 +16,10 @@ license=('custom')
 makedepends=(unzip)
 replaces=($pkgbase)
 
-source_x86_64=("https://dmde.ru/download/dmde-4-2-0-814-lin64-gui.zip"
-				"https://dmde.ru/download/dmde-4-2-0-814-lin64-con.zip")
+source_x86_64=("https://dmde.ru/download/${pkg_gui_64}"
+				"https://dmde.ru/download/${pkg_con_64}")
 
-source_i686=("https://dmde.ru/download/dmde-4-2-0-814-lin32-con.zip")
+source_i686=("https://dmde.ru/download/${pkg_con_32}")
 
 source=(dmde-linux.desktop
 		dmde-cli.desktop
